@@ -1,0 +1,325 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 297, 236
+STYLE DS_SETFONT | DS_NOFAILCREATE | DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "TMIDI: Tom's MIDI Player"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Open MIDI File",IDC_OPEN,7,209,56,14
+    PUSHBUTTON      "&Analysis",IDC_ANALYSIS,66,209,33,14,WS_DISABLED
+    COMBOBOX        IDC_MIDI_OUT,40,3,90,150,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MIDI Out:",IDC_MIDI_OUT_STATIC,7,6,32,8
+    COMBOBOX        IDC_MIDI_IN,197,3,93,150,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MIDI In:",IDC_MIDI_IN_STATIC,169,6,26,8
+    PUSHBUTTON      "&Play",IDC_PLAY,243,209,15,14,BS_ICON | WS_DISABLED
+    PUSHBUTTON      "&Stop",IDC_STOP,275,209,15,14,BS_ICON | WS_DISABLED
+    LTEXT           "",IDC_T0,22,33,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T1,22,44,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T2,22,55,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T3,22,66,97,11,SS_NOTIFY
+    LTEXT           "Tempo:",IDC_TICK,196,62,101,10
+    LTEXT           "",IDC_T4,22,77,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T5,22,88,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T6,22,99,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T7,22,110,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T8,22,121,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T9,22,132,97,11,SS_NOTIFY
+    LTEXT           "Events:",IDC_EVENTSLABEL,196,88,25,8
+    LTEXT           "",IDC_EVENTS,222,88,75,8
+    LTEXT           "Song Length:",IDC_SONGLENLABEL,196,113,44,8
+    LTEXT           "",IDC_SONG_LENGTH,240,113,57,8
+    LTEXT           "Current Time:",IDC_EVENTSLABEL3,196,187,43,8,NOT WS_VISIBLE
+    LTEXT           "Trigger Time:",IDC_EVENTSLABEL4,196,199,42,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_CURRENT_TIME,240,187,50,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_TRIGGER_TIME,240,199,11,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_T10,22,143,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T11,22,154,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T12,22,165,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T13,22,176,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T14,22,187,97,11,SS_NOTIFY
+    LTEXT           "",IDC_T15,22,198,97,11,SS_NOTIFY
+    CONTROL         "1:",IDC_C0,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,31,12,11
+    CONTROL         "2:",IDC_C1,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,42,12,11
+    CONTROL         "3:",IDC_C2,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,53,12,11
+    CONTROL         "4:",IDC_C3,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,64,12,11
+    CONTROL         "5:",IDC_C4,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,75,12,11
+    CONTROL         "6:",IDC_C5,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,86,12,11
+    CONTROL         "7:",IDC_C6,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,97,12,11
+    CONTROL         "8:",IDC_C7,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,108,12,11
+    CONTROL         "9:",IDC_C8,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,119,12,11
+    CONTROL         "10:",IDC_C9,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,130,12,11
+    CONTROL         "11:",IDC_C10,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,141,12,11
+    CONTROL         "12:",IDC_C11,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,152,12,11
+    CONTROL         "13:",IDC_C12,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,163,12,11
+    CONTROL         "14:",IDC_C13,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,174,12,11
+    CONTROL         "15:",IDC_C14,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,185,12,11
+    CONTROL         "16:",IDC_C15,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_NOTIFY | BS_FLAT,7,196,12,11
+    PUSHBUTTON      "Pa&use",IDC_PAUSE,259,209,15,14,BS_ICON | WS_DISABLED
+    CONTROL         "Slider1",IDC_SONG_SLIDER,"msctls_trackbar32",WS_TABSTOP,196,123,94,11
+    CONTROL         "Slider1",IDC_EVENT_SLIDER,"msctls_trackbar32",WS_DISABLED | WS_TABSTOP,196,98,94,11
+    LTEXT           "Polyphony:",IDC_POLYPHONY_STATIC,196,23,36,8
+    LTEXT           "",IDC_POLYPHONY,257,23,38,8
+    CONTROL         "Progress1",IDC_POLYPHONY_METER,"msctls_progress32",PBS_SMOOTH | WS_BORDER,233,24,22,7
+    PUSHBUTTON      "Te&xt",IDC_DISPLAY_TEXT,102,209,22,14,WS_DISABLED
+    CTEXT           "",IDC_CURRENT_TEXT,196,137,94,60,SS_NOTIFY
+    CONTROL         "Slider1",IDC_TEMPO_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,196,73,94,11
+    CONTROL         "Slider1",IDC_VELOCITY_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,196,47,44,11
+    CONTROL         "Slider1",IDC_PITCH_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,246,47,44,11
+    LTEXT           "Pitch: 0",IDC_PITCH,246,36,44,8,SS_NOTIFY
+    LTEXT           "Velocity: 0",IDC_VELOCITY,196,36,47,8,SS_NOTIFY
+    PUSHBUTTON      "&Tracks",IDC_DISPLAY_TRACKS,127,209,31,14
+    PUSHBUTTON      "&Sysex",IDC_DISPLAY_SYSEX,203,209,31,14,WS_DISABLED
+    PUSHBUTTON      "&Channels",IDC_DISPLAY_CHANNELS,161,209,38,14
+    CONTROL         IDB_GMLOGO,IDC_MIDI_LOGO,"Static",SS_BITMAP | SS_NOTIFY | SS_REALSIZEIMAGE | NOT WS_VISIBLE | WS_BORDER,134,3,31,22
+    CONTROL         "Loop",IDC_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,260,197,30,12
+    PUSHBUTTON      "All Instr.",IDC_ALL_INSTR,7,19,27,10
+    COMBOBOX        IDC_CONTROLLERS,40,17,90,150,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TEXT DIALOG 0, 0, 294, 209
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "TMIDI Text Display"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_TEXT_LIST,0,0,294,209,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_ASSOC DIALOG 0, 0, 193, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "TMIDI File Type Associations"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Yes",IDOK,42,53,50,14
+    PUSHBUTTON      "&No",IDCANCEL,100,53,50,14
+    CONTROL         "Never check file type associations again.",IDC_GOAWAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,39,179,9
+    LTEXT           "MIDI files are not currently associated with TMIDI.  Would you like to make TMIDI your default MIDI player?",IDC_STATIC,7,7,179,30
+END
+
+IDD_TRACKS DIALOG 0, 0, 544, 172
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "TMIDI Track Display"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_TRACKS_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,0,543,172
+END
+
+IDD_SYSEX DIALOG 0, 0, 554, 132
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "TMIDI Sysex Display"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_SYSEX_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,0,553,132
+END
+
+IDD_CHANNELS DIALOG 0, 0, 339, 153
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "TMIDI Channels Display"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_CHANNELS_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,0,339,153
+END
+
+IDD_GENERIC_TEXT DIALOG 0, 0, 119, 94
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "TMIDI Text Window"
+FONT 10, "Courier"
+BEGIN
+    EDITTEXT        IDC_GENERIC_TEXT,0,0,119,94,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+IDD_OUTCONFIG DIALOG 0, 0, 268, 169
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "TMIDI Output Device Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "MIDI Output Devices",IDC_STATIC,7,3,254,75
+    LISTBOX         IDC_OUT_DEV_LIST,12,14,244,59,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Device Configuration",IDC_STATIC,7,81,254,81
+    EDITTEXT        IDC_DEV_NAME,25,92,231,12,ES_AUTOHSCROLL
+    CONTROL         "MT-32",IDC_MS_MT32,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,219,109,37,10
+    CONTROL         "GM",IDC_MS_GM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,219,120,27,10
+    CONTROL         "GS",IDC_MS_GS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,219,142,27,10
+    CONTROL         "XG",IDC_MS_XG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,219,131,27,10
+    CONTROL         "",IDC_USABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,94,11,8
+    LTEXT           "Manufacturer:",IDC_DEV_MANUFACTURER,63,108,146,8
+    LTEXT           "Device ID:",IDC_DEV_ID,63,119,146,8
+    LTEXT           "Device Type:",IDC_DEV_TYPE,63,129,146,8
+    LTEXT           "Manufacturer:",IDC_STATIC,13,108,49,8
+    LTEXT           "Device ID:",IDC_STATIC,13,119,50,8
+    LTEXT           "Device Type:",IDC_STATIC,13,129,50,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        VERTGUIDE, 119
+        VERTGUIDE, 196
+        VERTGUIDE, 240
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 235
+        HORZGUIDE, 209
+    END
+
+    IDD_TEXT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 186
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_ASSOC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_SYSEX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 294
+    END
+
+    IDD_CHANNELS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 294
+    END
+
+    IDD_OUTCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        VERTGUIDE, 13
+        VERTGUIDE, 63
+        VERTGUIDE, 209
+        VERTGUIDE, 219
+        VERTGUIDE, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "tmidi.ico"
+IDI_PLAY                ICON                    "play.ico"
+IDI_PAUSE               ICON                    "pause.ico"
+IDI_STOP                ICON                    "stop.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GMLOGO              BITMAP                  "gmlogo.bmp"
+IDB_GSLOGO              BITMAP                  "gslogo.bmp"
+IDB_XGLOGO              BITMAP                  "xglogo.bmp"
+IDB_MTLOGO              BITMAP                  "mtlogo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_MAIN MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...",                    IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_FILE_EXIT
+    END
+    POPUP "&Output Devices"
+    BEGIN
+        MENUITEM "&Configure...",               IDM_OUTCONFIG
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

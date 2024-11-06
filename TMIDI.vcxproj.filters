@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8a0ad297-9db8-45e5-b1df-7e2a2964b6e3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6866d6cd-5403-4242-baa7-65a4c6aa8060}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{fe3048fb-6e20-4fed-8e68-35cb717881f8}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tmidi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tmidi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="gmlogo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="gslogo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="mtlogo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="pause.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="play.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="stop.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="tmidi.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="xglogo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tmidi.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="default1.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
