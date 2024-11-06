@@ -3017,15 +3017,7 @@ void update_display(HDC hdc)
 					// when calculating its position.  If the calculated position is outside
 					// the bar, the loop shifts it up or down by an octive until it's in range.
 					note = j;
-					do
-					{
-						x = BAR_X + (note - 24) * BAR_WIDTH / (96 - 24);
-						if (x > BAR_X + BAR_WIDTH - 1)
-							note -= 12;
-						if (x < BAR_X)
-							note += 12;
-					}
-					while (x > BAR_X + BAR_WIDTH - 1 || x < BAR_X);
+					x = BAR_X + note * BAR_WIDTH / 128;
 					// Mark this channel as having something drawn for it.
 					c->drawn = 1;
 					// Pick color based on instrument
@@ -3074,7 +3066,7 @@ void update_display(HDC hdc)
 						MoveToEx(hdc, x + pb, y, NULL);
 						LineTo(hdc, x, y + h / 2);
 						// Draw a line going down and out for the second half of the bar
-						LineTo(hdc, x + pb, y + h);
+						LineTo(hdc, x, y + h);
 					}
 					// Select the old pen back into the DC and delete the temp color pen
 					SelectObject(hdc, holdpen);
