@@ -167,7 +167,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		if (fnptr[strlen(fnptr) - 1] == '\"')
 			fnptr[strlen(fnptr) - 1] = '\0';
 		// Check to see if another instance of the program is running
-		hwnd = FindWindow(NULL, "TMIDI: Tom's MIDI Player");
+		hwnd = FindWindow(NULL, "Tom's MIDI Player 128-Keys Edition");
 		cds.dwData = IPC_PLAY;
 		cds.cbData = strlen(fnptr) + 1;
 		cds.lpData = fnptr;
@@ -2918,8 +2918,6 @@ void update_channel_background(HDC hdc, int i, channel_state_t *c)
 	int w;
 	HPEN holdpen = NULL;
 	RECT txtrect;
-	static HPEN whitepen = (struct HPEN__ *) GetStockObject(WHITE_PEN);
-	static HPEN blackpen = (struct HPEN__ *) GetStockObject(BLACK_PEN);
 	static char buf[256];
 	int v;
 
@@ -3064,7 +3062,7 @@ void update_display(HDC hdc)
 							pb = BAR_X - x;
 						// Draw a line going down half way to the center of the bar
 						MoveToEx(hdc, x + pb, y, NULL);
-						LineTo(hdc, x, y + h / 2);
+						LineTo(hdc, x, y + h / 4 * 3);
 						// Draw a line going down and out for the second half of the bar
 						LineTo(hdc, x, y + h);
 					}
@@ -3621,7 +3619,7 @@ void set_channel_mute(int channel, int mute)
 	unsigned char vel, note, was_muted;
 	HWND hwnd = GetDlgItem(hwndApp, IDC_C0 + channel);
 
-//	style = GetWindowLong(hwnd, GWL_STYLE);
+	LONG style = GetWindowLong(hwnd, GWL_STYLE);
 
 	was_muted = ms.channels[channel].muted;
 	ms.channels[channel].muted = mute;
@@ -3630,7 +3628,7 @@ void set_channel_mute(int channel, int mute)
 	{
 		// Mute the channel
 		all_notes_off_channel(channel);
-//		style |= SS_SUNKEN;
+		style &= ~BS_FLAT;
 	}
 	else
 	{
@@ -3645,13 +3643,13 @@ void set_channel_mute(int channel, int mute)
 					note_on(TRUE, note, vel, channel);
 			}
 		// Change the channel text
-//		style &= ~SS_SUNKEN;
+		style |= BS_FLAT;
 	}
 
 	SendMessage(hwnd, BM_SETCHECK, (WPARAM) mute, 0);
-	//SetWindowLong(hwnd, GWL_STYLE, style);
-	//SetWindowPos(hwnd, NULL, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOOWNERZORDER | SWP_NOSIZE | SWP_DRAWFRAME);
-	//InvalidateRect(hwnd, NULL, TRUE);
+	SetWindowLong(hwnd, GWL_STYLE, style);
+	SetWindowPos(hwnd, NULL, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOOWNERZORDER | SWP_NOSIZE | SWP_DRAWFRAME);
+	InvalidateRect(hwnd, NULL, TRUE);
 }
 
 void set_channel_solo(int channel)
